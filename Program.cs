@@ -28,16 +28,30 @@ void PrintArray(int[,] arr)
 
 //
 
-int[,] arr = GetRandomArray(3,4);
+int[,] arr = GetRandomArray(4,5);
 PrintArray(arr);
 
-Console.Write("Введите строку числа в массиве:");
 int x = 0; 
 while(true)
     {
+        Console.Write($"Введите строку числа в массиве:");
         if(int.TryParse(Console.ReadLine(), out x))
-            if(x <= arr.GetLength(0) && x => 0) break;
+            if(x <= arr.GetLength(0) && x > 0) break;
         Console.WriteLine("Ошибка ввода");
     }
+
+int y = 0;
+while(true)
+    {
+        Console.Write($"Введите столбец числа в массиве:");
+        if(int.TryParse(Console.ReadLine(), out y))
+            if(y <= arr.GetLength(1) && y > 0) break;
+        Console.WriteLine("Ошибка ввода");
+    }
+
+
+
+
+Console.WriteLine($"{arr[x-1,y-1]}");
 
 
