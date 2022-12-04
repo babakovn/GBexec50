@@ -30,3 +30,14 @@ void PrintArray(int[,] arr)
 
 int[,] arr = GetRandomArray(3,4);
 PrintArray(arr);
+
+Console.Write("Введите строку числа в массиве:");
+int x = 0; 
+while(true)
+    {
+        if(int.TryParse(Console.ReadLine(), out x))
+            if(x <= arr.GetLength(0) && x => 0) break;
+        Console.WriteLine("Ошибка ввода");
+    }
+
+
