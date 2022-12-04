@@ -52,6 +52,6 @@ while(true)
 
 
 
-Console.WriteLine($"{arr[x-1,y-1]}");
+Console.WriteLine($"Элемент массива [{x}, {y}] равен {arr[x-1,y-1]}");
 
 
