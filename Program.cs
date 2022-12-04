@@ -37,7 +37,7 @@ while(true)
         Console.Write($"Введите строку числа в массиве:");
         if(int.TryParse(Console.ReadLine(), out x))
             if(x <= arr.GetLength(0) && x > 0) break;
-        Console.WriteLine("Ошибка ввода");
+        Console.WriteLine("Введено неверное число, таких строк нет в массиве.");
     }
 
 int y = 0;
@@ -46,7 +46,7 @@ while(true)
         Console.Write($"Введите столбец числа в массиве:");
         if(int.TryParse(Console.ReadLine(), out y))
             if(y <= arr.GetLength(1) && y > 0) break;
-        Console.WriteLine("Ошибка ввода");
+        Console.WriteLine("Введено неверное число, таких столбцов нет в массиве.");
     }
 
 
